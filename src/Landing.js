@@ -1,5 +1,3 @@
-import './App.css';
-import './Landing.css';
 import TypeWriterEffect from 'react-typewriter-effect';
 
 export function Landing() {
@@ -23,7 +21,7 @@ export function Landing() {
                 multiTextLoop={true}
             />
             <h1>I'm Cindy Hu</h1>
-            <h2>Passionate about human-computer interaction and technology that makes everyday life a little more enjoyable</h2>
+            <h2>Passionate about technology that makes everyday life a little more enjoyable</h2>
         </div>
     </div>
   );
