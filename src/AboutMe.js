@@ -4,7 +4,7 @@ import Grid from '@mui/material/Grid';
 export function AboutMe() {
     const profilePath = process.env.PUBLIC_URL + '/profile.jpg';
     return (
-        <div className="AboutMe">
+        <div className="Section">
         <h1>About Me.</h1>
         <Grid sx={{marginTop: "30px"}} container spacing={4}>
         <Grid item xs={4}>

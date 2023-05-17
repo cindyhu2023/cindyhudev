@@ -1,6 +1,7 @@
 .App {
   background-color: #00071E;
   color: white;
+  font-family: 'Work Sans', sans-serif;
 }
 
 .Landing {
@@ -19,9 +20,46 @@
   margin: auto;
 }
 
-.AboutMe {
+.Section {
   padding-top: 50px;
   padding-bottom: 50px;
   width: 70%;
   margin: auto;
+}
+
+.myBtn {
+  margin: 10px;
+  padding: 5px 25px;
+}
+
+.project-img {
+  width: 90%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8); /* semi-transparent black */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.project-img:hover .overlay {
+  opacity: 1;
+}
+
+.projectDescription {
+  color: white;
+  padding: 10px;
+  font-size: 12px;
 }
