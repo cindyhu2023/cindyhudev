@@ -21,7 +21,7 @@ export function Landing() {
                 multiTextLoop={true}
             />
             <h1>I'm Cindy Hu</h1>
-            <h4>Passionate about technology that makes everyday life a little more enjoyable</h4>
+            <h4>Passionate about technology and creating enjoyable experiences</h4>
         </div>
     </div>
   );
