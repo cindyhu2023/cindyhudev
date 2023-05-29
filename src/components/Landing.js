@@ -2,7 +2,7 @@ import TypeWriterEffect from 'react-typewriter-effect';
 
 export function Landing() {
   return (
-    <div className="Landing">
+    <div className="Landing" id="home">
     <div className='LandingText'>
         <TypeWriterEffect
                 textStyle={{ textAlign: 'center',}}
@@ -21,7 +21,7 @@ export function Landing() {
                 multiTextLoop={true}
             />
             <h1>I'm Cindy Hu</h1>
-            <h2>Passionate about technology that makes everyday life a little more enjoyable</h2>
+            <h4>Passionate about technology that makes everyday life a little more enjoyable</h4>
         </div>
     </div>
   );

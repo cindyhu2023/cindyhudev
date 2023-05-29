@@ -1,8 +1,17 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import { Landing } from './Landing';
-import { AboutMe } from './AboutMe';
-import { Project } from './Projects';
+import { Landing } from './components/Landing';
+import { AboutMe } from './components/AboutMe';
+import { Project } from './components/Projects';
+import { Contact } from './components/Contact';
+import { MyNavbar } from './components/navbar';
+import { Route, Routes, BrowserRouter } from 'react-router-dom';
+// import { Template } from './allProjects/Template';
+import { Meta } from './allProjects/MetaProj';
+import { Amazon } from './allProjects/Amazon';
+import { Cerebro } from './allProjects/Cerebro';
+import { FlappyPhone } from './allProjects/FlappyPhone';
+
 
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 
@@ -27,13 +36,31 @@ const theme = createTheme({
   }
 });
 
+function Home () {
+  return (
+    <div>
+      <MyNavbar/>
+      <Landing />
+      <AboutMe />
+      <Project />
+      <Contact />
+    </div>
+  )
+}
+
 function App() {
   return (
     <ThemeProvider theme={theme}>
     <div className="App">
-      <Landing />
-      <AboutMe />
-      <Project />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home/>} />
+        <Route path="/meta" element={<Meta/>} />
+        <Route path="/amazon" element={<Amazon/>} />
+        <Route path="/cerebro" element={<Cerebro/>} />
+        <Route path="/flappy-phone" element={<FlappyPhone/>} />
+      </Routes>
+    </BrowserRouter>
     </div>
     </ThemeProvider>
   );

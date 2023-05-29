@@ -1,19 +1,10 @@
+import React from 'react';
 import { projectSection, projectList } from "./config";
 import Button from '@mui/material/Button';
 import { useState } from "react";
 import Grid from '@mui/material/Grid';
 
 export function Project() {
-    const engineeringBtn = {
-      backgroundColor: "#00071E",
-      borderColor: "#4297A0",
-      color: "#4297A0",
-  }
-    const engineeringBtnSelected = {
-        backgroundColor: "#4297A0",
-        borderColor: "#4297A0",
-        color: "white",
-    }
     const [selectedIndex, setSelectedIndex] = useState(0);
     const [ENGINEERING, DESIGN, RESEARCH] = projectSection;
     const engineeringProjects = projectList.filter(project => project.sections.includes(ENGINEERING));
@@ -36,13 +27,11 @@ export function Project() {
         }
     }
 
+
     return (
-        <div className="Section">
+        <div className="Section" id="projects">
         <h1>Projects.</h1>
         <div className="projectSections">
-                {/* <button className={selectedIndex === 0 ? "myBtn engineeringBtnSelected" : "myBtn engineeringBtn"} onClick={() => changeSection(ENGINEERING)}>
-          Engineering
-        </button> */}
         <Button variant={selectedIndex === 0 ? "contained" : "outlined"} color="primary" sx={{margin: "10px", padding: "5px 25px"}} onClick={() => changeSection(ENGINEERING)}>Engineering</Button>
         <Button variant={selectedIndex === 1 ? "contained" : "outlined"} color="secondary" sx={{margin: "10px", padding: "5px 25px"}}  onClick={() => changeSection(DESIGN)}>
           UX Design
@@ -56,6 +45,7 @@ export function Project() {
             {projects.map(project => (
               <Grid key={project.id} item xs={12} sm={6} md={4}>
                 <div className="project" style={{textAlign: "center", marginLeft:"10px", marginRight:"10px"}}>
+                <a href={project.url}>
                   <div className="project-img">
                     <img
                       style={{width: '100%', height: 'auto'}}
@@ -67,6 +57,7 @@ export function Project() {
                     </div>  
                     </div>
                   <p>{project.title}</p>
+                  </a>
                 </div>
               </Grid>
             ))}

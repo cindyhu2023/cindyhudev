@@ -4,6 +4,11 @@
   font-family: 'Work Sans', sans-serif;
 }
 
+.myNav {
+  width: 70%;
+  margin: auto;
+}
+
 .Landing {
   background-image: url('../public/bg.png');
   text-align: center;
@@ -20,6 +25,12 @@
   margin: auto;
 }
 
+
+.header-img {
+  width: 100%;
+  height: auto;
+}
+
 .Section {
   padding-top: 50px;
   padding-bottom: 50px;
@@ -30,6 +41,11 @@
 .myBtn {
   margin: 10px;
   padding: 5px 25px;
+}
+
+.project a {
+  text-decoration: none;
+  color: white;
 }
 
 .project-img {
@@ -62,4 +78,47 @@
   color: white;
   padding: 10px;
   font-size: 12px;
+}
+
+.Contact {
+  min-width: 40%;
+  max-width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-icon {
+  width: 80%;
+  max-width: 50px;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-text {
+  font-size: 20px;
+  /* vertical-align: middle; */
+  display: flex;
+  align-items: center;
+  margin-bottom: 0px;
+}
+
+.SubSection {
+  margin-top: 30px;
+}
+
+/* color white, but opacity at 0.7 */
+.BackButton {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+}
+
+/* hover over BackButton, and opacity 1, and transition */
+.BackButton:hover {
+  color: rgba(255, 255, 255, 1);
+  transition: color 0.3s ease;
 }
