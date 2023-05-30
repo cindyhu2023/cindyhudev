@@ -108,6 +108,11 @@
   margin-top: 30px;
 }
 
+.SubSection a {
+  text-decoration: underline;
+  color: #69F1FF;
+}
+
 /* color white, but opacity at 0.7 */
 .BackButton {
   text-decoration: none;
@@ -122,3 +127,38 @@
   color: rgba(255, 255, 255, 1);
   transition: color 0.3s ease;
 }
+
+.highlight {
+  background-color: #FFD25E;
+  /* background-color: rgba(66, 151, 160, 0.8); */
+  color: #00071E;
+  
+}
+
+.projImg {
+  width: 60%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+
+}
+
+.imgCaption {
+  font-style: italic;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.8);
+  margin-top: 10px;
+  margin-bottom: 40px;
+  font-size: 14px;
+}
+
+.screenshotCaption {
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+  margin-top: 10px;
+  margin-bottom: 40px;
+  font-size: 14px;
+}
+
