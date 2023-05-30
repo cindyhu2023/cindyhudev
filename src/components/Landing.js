@@ -9,7 +9,7 @@ export function Landing() {
                 startDelay={500}
                 cursorColor="#3F3D56"
                 multiText={[
-                'Hello!',
+                'Hello World!',
                 '哈囉！',
                 'Hey there!',
                 '你好！',
