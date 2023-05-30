@@ -2,6 +2,7 @@ import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import { Back } from "./BackButton";
 import Button from '@mui/material/Button';
+import { MyFooter } from '../components/myFooter';
 
 export function FlappyPhone() {
     const headerPath = process.env.PUBLIC_URL + '/project-header/';
@@ -56,6 +57,7 @@ export function FlappyPhone() {
         </div>
         </div>
         </div>
+        <MyFooter />
         </div>
     )
 }

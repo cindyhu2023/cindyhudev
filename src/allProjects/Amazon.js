@@ -1,6 +1,7 @@
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import { Back } from "./BackButton";
+import { MyFooter } from '../components/myFooter';
 
 export function Amazon() {
     const headerPath = process.env.PUBLIC_URL + '/project-header/';
@@ -38,7 +39,7 @@ export function Amazon() {
         {/* make numbered list with two list item*/}
         <ol>
             <li>At the team level, I built a new AWS service based on one of the team’s existing optimization services and created a comprehensive AWS migration guide tailored for the team’s area of work. </li>
-            <li>At the organizational level, I demonstrated the feasibility of adopting an Infrastructure-As-Code architecture and containerizing the optimization and prioritization services in Sort Centers. By utilizing AWS Elastic Container Service (ECS), I effectively implemented a containerized approach, enhancing scalability, flexibility, and operational efficiency.</li>
+            <li>At the organizational level, I demonstrated the feasibility of adopting an Infrastructure-As-Code architecture and containerizing the load optimization and prioritization services used in Amazon's Sort Centers. By utilizing AWS Elastic Container Service (ECS), I effectively implemented a containerized approach, enhancing scalability, flexibility, and operational efficiency.</li>
         </ol>
         </div>
         <div className="SubSection">
@@ -55,12 +56,8 @@ export function Amazon() {
         <p>It was my first ever internship in a company. I’m fortunate to learn so much about the standard industry practices and tools early on in my undergraduate time, such as working with a large, established code base, best coding practices, reading documentations, and asking for help. The experience helped me establish good habits as an engineer and onboard faster to my subsequent internships.</p>
        </div>
         
-        {/* <div className="Section"> */}
-        
-        {/* </div> */}
-        
-        
         </div>
+        <MyFooter />
         </div>
     )
 }

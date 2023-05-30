@@ -1,6 +1,7 @@
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import { Back } from "./BackButton";
+import { MyFooter } from '../components/myFooter';
 
 
 export function Meta() {
@@ -78,8 +79,8 @@ export function Meta() {
         <p style={{marginBottom: '0px'}}><b>Project Ownership and Cross-functional collaboration</b></p>
         <p>I had the chance to work with product designers, client engineers, data engineers, and data scientists to scope and design my project together, which really helps me understand the product development cycle and learn communication skills. Towards the end of my internship, I also actively tried to reach out to other client teams outside of our org and find opportunities to see how my project could benefit their teams. </p>
         </div>
-        
         </div>
+        <MyFooter />
         </div>
     )
 }

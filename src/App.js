@@ -11,6 +11,7 @@ import { Meta } from './allProjects/MetaProj';
 import { Amazon } from './allProjects/Amazon';
 import { Cerebro } from './allProjects/Cerebro';
 import { FlappyPhone } from './allProjects/FlappyPhone';
+import { MyFooter } from './components/myFooter';
 
 
 import { ThemeProvider, createTheme } from '@mui/material/styles';
@@ -44,6 +45,7 @@ function Home () {
       <AboutMe />
       <Project />
       <Contact />
+      <MyFooter />
     </div>
   )
 }

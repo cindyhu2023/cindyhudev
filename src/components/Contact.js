@@ -12,19 +12,25 @@ export function Contact() {
                 <img src={iconPath + 'mail.png'}  className="contact-icon" alt='mail icon'/>
             </Grid>
             <Grid item xs={10} className="contact-text">
-                cindyhu2023@u.northwestern.edu
+                <a href="mailto:cindyhu2023@u.northwestern.edu">
+                    cindyhu2023@u.northwestern.edu
+                </a>
             </Grid>
             <Grid item xs={2}>
                 <img src={iconPath + 'linkedin.png'}  className="contact-icon" alt="linkedin icon"/>
             </Grid>
             <Grid item xs={10} className="contact-text">
-                linkedin.com/cindy-hu-6110361a1
+                <a href="https://www.linkedin.com/in/cindyhu2023/">
+                linkedin.com/in/cindyhu2023
+                </a>
             </Grid>
             <Grid item xs={2}>
                 <img src={iconPath + 'github.png'}  className="contact-icon" alt="github icon"/>
             </Grid>
             <Grid item xs={10} className="contact-text">
+            <a href="https://github.com/cindyhu2023">
                 github.com/cindyhu2023
+            </a>
             </Grid>
         </Grid>
         </Container>

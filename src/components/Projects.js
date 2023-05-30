@@ -3,6 +3,59 @@ import { projectSection, projectList } from "./config";
 import Button from '@mui/material/Button';
 import { useState } from "react";
 import Grid from '@mui/material/Grid';
+import Chip from '@mui/material/Chip';
+
+
+function EngineeringChip ({ label }) {
+  return (
+    <Chip
+      label={label}
+      color="primary"
+      variant="contained"
+      size="small"
+      sx={{
+        fontSize: "12px",
+        padding: "3px",
+        marginTop: "5px",
+        marginRight: "5px",
+      }}
+    />
+  )
+}
+
+function DesignChip ({ label }) {
+  return (
+    <Chip
+      label={label}
+      color="secondary"
+      variant="contained"
+      size="small"
+      sx={{
+        fontSize: "12px",
+        padding: "3px",
+        marginTop: "5px",
+        marginRight: "5px",
+      }}
+    />
+  )
+}
+
+function ResearchChip ({ label }) {
+  return (
+    <Chip
+      label={label}
+      color="info"
+      variant="contained"
+      size="small"
+      sx={{
+        fontSize: "12px",
+        padding: "3px",
+        marginTop: "5px",
+        marginRight: "5px",
+      }}
+    />
+  )
+}
 
 export function Project() {
     const [selectedIndex, setSelectedIndex] = useState(0);
@@ -44,7 +97,7 @@ export function Project() {
           <Grid container sx={{marginTop: "20px"}}>
             {projects.map(project => (
               <Grid key={project.id} item xs={12} sm={6} md={4}>
-                <div className="project" style={{textAlign: "center", marginLeft:"10px", marginRight:"10px"}}>
+                <div className="project" style={{textAlign: "center", marginLeft:"10px", marginRight:"10px", marginBottom:'20px'}}>
                 <a href={project.url}>
                   <div className="project-img">
                     <img
@@ -56,8 +109,22 @@ export function Project() {
                       <p className="projectDescription">{project.description}</p>
                     </div>  
                     </div>
-                  <p>{project.title}</p>
-                  </a>
+                  <p style={{fontSize: '18px', marginBottom:'0px'}}>{project.title}</p>
+                </a>
+                <div className="projectTags">
+                  {project.tags.map(tag => {
+                    const [type, label] = tag;
+                    if (type === ENGINEERING) {
+                      return <EngineeringChip label={label} />
+                    } else if (type === DESIGN) {
+                      return <DesignChip label={label} />
+                    } else if (type === RESEARCH) {
+                      return <ResearchChip label={label} />
+                    } else {
+                      return null;
+                   }
+                  })}
+                </div>
                 </div>
               </Grid>
             ))}

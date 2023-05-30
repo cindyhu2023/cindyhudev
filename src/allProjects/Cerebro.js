@@ -1,6 +1,7 @@
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import { Back } from "./BackButton";
+import { MyFooter } from '../components/myFooter';
 
 export function Cerebro() {
     const headerPath = process.env.PUBLIC_URL + '/project-header/';
@@ -108,14 +109,8 @@ export function Cerebro() {
         <p>My teammate and I have always joked about re-writing the codebase in modern tech stack and release the app to App Store, but we never had the time and dedication to make this happen. If you found this concept interesting, shoot me an email at cindyhu2023@u.northwestern.edu!</p>
         <p>Also, there are several on-going projects in DTR. Students typically work on a project for 2-4 quarters and hand-off the project to the next student when they leave DTR. I’m grateful to be on a project that has a solid foundation for me to keep iterating on. It wouldn’t be possible for me to publish a paper and present at CHI in my second quarter without all previous work. Checkout all the contributors on the project, other projects, and the wonderful community at <a href='https://dtr.northwestern.edu/'>[DTR’s website]</a>!</p>
         </div>
-
-        
-        {/* <div className="Section"> */}
-        
-        {/* </div> */}
-        
-        
         </div>
+        <MyFooter/>
         </div>
     )
 }
