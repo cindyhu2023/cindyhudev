@@ -11,6 +11,8 @@ import { Meta } from './allProjects/MetaProj';
 import { Amazon } from './allProjects/Amazon';
 import { Cerebro } from './allProjects/Cerebro';
 import { FlappyPhone } from './allProjects/FlappyPhone';
+import { DoorDash } from './allProjects/DoorDash';
+import { TikTok } from './allProjects/TikTok';
 import { MyFooter } from './components/myFooter';
 
 
@@ -61,6 +63,8 @@ function App() {
         <Route path="/amazon" element={<Amazon/>} />
         <Route path="/cerebro" element={<Cerebro/>} />
         <Route path="/flappy-phone" element={<FlappyPhone/>} />
+        <Route path="/doordash" element={<DoorDash/>} />
+        <Route path="/tiktok" element={<TikTok/>} />
       </Routes>
     </BrowserRouter>
     </div>

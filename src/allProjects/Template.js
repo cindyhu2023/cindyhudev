@@ -1,6 +1,7 @@
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import { Back } from "../components/BackButton";
+import { MyFooter } from '../components/myFooter';
 
 export function Template() {
     const headerPath = process.env.PUBLIC_URL + '/project-header/';
@@ -13,22 +14,22 @@ export function Template() {
         <h1>PROJECT TITLE</h1>
         <hr/>
         <Box  sx={{ flexGrow: 1 }}>
-            <Grid container spacing={0.5}>
+            <Grid container spacing={0.8}>
                 <Grid item xs={3}>
                 <h5>ROLE</h5>
-                <p>PLACEHOLDER</p>
+                <p style={{fontSize: '14px'}}>Software Engineer Intern</p>
                 </Grid>
                 <Grid item xs={3}>
                 <h5>TIMELINE</h5>
-                <p>PLACEHOLDER</p>
+                <p style={{fontSize: '14px'}}>June 2022 - September 2022</p>
                 </Grid>
                 <Grid item xs={3}>
                 <h5>TECH STACK</h5>
-                <p>PLACEHOLDER</p>
+                <p style={{fontSize: '14px'}}> Hack/PHP, GraphQL, Hive, Scuba, Mercurial (monorepo source control)</p>
                 </Grid>
                 <Grid item xs={3}>
                 <h5>SKILLS</h5>
-                <p>PLACEHOLDER</p>
+                <p style={{fontSize: '14px'}}>Backend Software Engineering, API and System Design, Cross-Functional Collaboration</p>
                 </Grid>
             </Grid>
         </Box>
@@ -45,12 +46,8 @@ export function Template() {
         <p>{placeholderText}</p>
         </div>
         
-        {/* <div className="Section"> */}
-        
-        {/* </div> */}
-        
-        
         </div>
+        <MyFooter />
         </div>
     )
 }
