@@ -35,7 +35,7 @@ export function Cerebro() {
         </Box>
         <div className="SubSection">
         <h3>Overview</h3>
-        <p>A human-computer interaction research project on finding small moments in everyday life as opportunity to start conversations and get to know someone online.</p>
+        <p>Cerebro is a mobile app that prompts you to share small moments of your life to start conversations. This is also a human-computer interaction research project that tries to explore how mundane, everyday moments can help building relationships digitally with someone you don't know. </p>
         <p>Throughout the time of working on this project, my teammate and I have conducted many rounds of user testings and shipped a few iterations of the prototype. I have learned a lot about <b className='highlight'>human-centered design process</b> and <b className='highlight'>agile development practices</b>. But the most valuable thing I have learned is <b className='highlight'>self-reflection and metacognition</b>, which is reflecting on what I learn, how I learn, and how I want to grow.</p>
         <p>This project is part of the Design, Technology, and Research (DTR) studio at Northwestern. I have also published the paper at ACM Conference of Human Factors in Computing System (CHI) 2022 under Student Research Competition track.  
         <a href="https://dl.acm.org/doi/fullHtml/10.1145/3491101.3516810">[View the paper here!]</a>
