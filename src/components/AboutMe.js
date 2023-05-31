@@ -14,7 +14,7 @@ export function AboutMe() {
             <p>Oh hey, glad to see you are here!</p>
             <p>I’m Cindy. I’m from Taiwan, and I’m currently a senior studying computer science and design at Northwestern University. I would call myself a software engineer with a designer’s mindset: embrace ambiguity, be curious, and not afraid of obstacles.</p>
             <p>I like working on challenges that allow me to learn and grow the most, and I am also very interested in the intersection of design and technology where I create and build human-centered solutions that brings delight to everyday life.</p>
-            <p>Things I like: traveling, cooking, drawing, photography, cat, warm coffee in the morning, raining sound at night, and figuring new stuff out</p>
+            <p>Things I like: traveling, photography, warm coffee in the morning, and figuring new stuff out</p>
             <p>Things I don’t like: any sports with a ball, aquarium, and being told what to do </p>
         </Grid>
 
