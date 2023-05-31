@@ -46,7 +46,7 @@ export function Cerebro() {
         <div className="SubSection">
         <h3>Ever Had an Awkward Experience Talking to Someone Online?</h3>
         <p>Do you ever have this experience? Met someone interesting briefly and really wished to know them better, “stalked” them online and browsed all of their social media profiles, and wanted to start a conversation but millions of “what-ifs” in your head wouldn’t go away.</p>
-        <p>Why is getting to know someone online so stressful?</p>
+        <p>Why is chatting online so stressful?</p>
         <img src={imagePath + 'dtr2.png'} className='projImg' alt='facebook and messenger screenshots'/>
         <p className="imgCaption">Felt the struggle? Me too.</p>
         </div>
