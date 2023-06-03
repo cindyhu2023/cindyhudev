@@ -94,6 +94,7 @@ export function Project() {
         </Button> 
         </div>
         <div className="projectList">
+        { selectedIndex === 1 ? (<h5><i>More design projects coming soon!</i></h5>) : null}
           <Grid container sx={{marginTop: "20px"}}>
             {projects.map(project => (
               <Grid key={project.id} item xs={12} sm={6} md={4}>
