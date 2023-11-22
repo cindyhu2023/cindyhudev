@@ -38,14 +38,14 @@ export const projectList = [
         "sections": [ENGINEERING, DESIGN, RESEARCH],
         "tags": [[ENGINEERING, "Full Stack"], [DESIGN, "UX Design"], [RESEARCH, "HCI Research"]],
     },
-    // {
-    //     "url": "/tiktok",
-    //     "title": "TikTok Monthly Recap",
-    //     "img": "tiktok.png",
-    //     "description": "A UX design project on improving TikTok algorithm through monthly recap experience",
-    //     "sections": [DESIGN],
-    //     "tags": [[DESIGN, "UX Design"]],
-    // },
+    {
+        "url": "/tiktok",
+        "title": "TikTok Monthly Roundup",
+        "img": "tiktok.png",
+        "description": "A UX design project on improving TikTok algorithm through monthly roundup experience",
+        "sections": [DESIGN],
+        "tags": [[DESIGN, "UX Design"]],
+    },
     // {
     //     "url": "/doordash",
     //     "title": "DoorDash VIP Experience",

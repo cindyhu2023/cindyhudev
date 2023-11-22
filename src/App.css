@@ -140,6 +140,17 @@
   
 }
 
+.tiktokOverview{
+  background-image: url("../public/project-img/tiktok-3.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 150px 75px;
+  text-align: center;
+  /* font-weight: normal; */
+  font-size: 40px;
+  margin-bottom: 50px;
+}
+
 .projImg {
   width: 60%;
   height: auto;
@@ -147,6 +158,15 @@
   margin-left: auto;
   margin-right: auto;
   margin-top: 40px;
+}
+
+.projImg-full {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
 
 }
 
