@@ -13,6 +13,7 @@ import { Cerebro } from './allProjects/Cerebro';
 import { FlappyPhone } from './allProjects/FlappyPhone';
 import { DoorDash } from './allProjects/DoorDash';
 import { TikTok } from './allProjects/TikTok';
+import { CreativeCoding } from './allProjects/CreativeCoding';
 import { MyFooter } from './components/myFooter';
 
 
@@ -65,6 +66,8 @@ function App() {
         <Route path="/flappy-phone" element={<FlappyPhone/>} />
         <Route path="/doordash" element={<DoorDash/>} />
         <Route path="/tiktok" element={<TikTok/>} />
+        <Route path="/creative-coding" element={<CreativeCoding/>} />
+
       </Routes>
     </BrowserRouter>
     </div>

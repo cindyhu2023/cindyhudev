@@ -39,6 +39,14 @@ export const projectList = [
         "tags": [[ENGINEERING, "Backend"]],
     },
     {
+        "url": "/creative-coding",
+        "title": "Creative Coding",
+        "img": "creative-coding.png",
+        "description": "A collection of creative coding projects with P5.js for Generative Art and A-frame for WebVR",
+        "sections": [ENGINEERING],
+        "tags": [[ENGINEERING, "Frontend"]],
+    },
+    {
         "url": "/tiktok",
         "title": "TikTok Monthly Roundup",
         "img": "tiktok.png",
