@@ -14,6 +14,7 @@ import { FlappyPhone } from './allProjects/FlappyPhone';
 import { DoorDash } from './allProjects/DoorDash';
 import { TikTok } from './allProjects/TikTok';
 import { CreativeCoding } from './allProjects/CreativeCoding';
+import { Photography } from './allProjects/Photography';
 import { MyFooter } from './components/myFooter';
 
 
@@ -30,6 +31,10 @@ const theme = createTheme({
     },
     info: {
       main: '#7879F1',
+    },
+    warning: {
+      main: '#F4EAE6',
+      contrastText: '#603C1F'
     }
   },
   shape: {
@@ -67,6 +72,7 @@ function App() {
         <Route path="/doordash" element={<DoorDash/>} />
         <Route path="/tiktok" element={<TikTok/>} />
         <Route path="/creative-coding" element={<CreativeCoding/>} />
+        <Route path="/photography" element={<Photography/>} />
 
       </Routes>
     </BrowserRouter>

@@ -4,7 +4,6 @@ import { Back } from "./BackButton";
 import { MyFooter } from '../components/myFooter';
 
 export function TikTok() {
-    const headerPath = process.env.PUBLIC_URL + '/project-header/';
     const imagePath = process.env.PUBLIC_URL + '/project-img/';
     return (
         <div className="project-page">

@@ -6,7 +6,6 @@ import ButtonGroup from "@mui/material/ButtonGroup";
 import { MyFooter } from "../components/myFooter";
 
 export function CreativeCoding() {
-  const headerPath = process.env.PUBLIC_URL + "/project-header/";
   const imagePath = process.env.PUBLIC_URL + "/project-img/";
   return (
     <div className="project-page">
@@ -46,7 +45,7 @@ export function CreativeCoding() {
           </p>
           <p>
             All credits go to Prof. Kate Compton{" "}
-            <a href="https://twitter.com/GalaxyKate" target="_blank">
+            <a href="https://twitter.com/GalaxyKate" rel="noreferrer" target="_blank">
               @galaxykate
             </a>
             . She provided great templates for all projects so that we have

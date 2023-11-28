@@ -2,8 +2,9 @@
 const ENGINEERING = "Engineering";
 const DESIGN = "UX Design";
 const RESEARCH = "Research";
+const MISC = "Misc.";
 
-export const projectSection = [ENGINEERING, DESIGN, RESEARCH]
+export const projectSection = [ENGINEERING, DESIGN, RESEARCH, MISC]
 
 export const projectList = [
     {
@@ -54,6 +55,14 @@ export const projectList = [
         "sections": [DESIGN],
         "tags": [[DESIGN, "UX Design"]],
     },
+    {
+        "url": "/photography",
+        "title": "Photography",
+        "img": "photography.png",
+        "description": "A collection of photos and moments in my life, on digital and film camera!",
+        "sections": [MISC],
+        "tags": [[MISC, "Digital"], [MISC, "Film"]],
+    }
     // {
     //     "url": "/doordash",
     //     "title": "DoorDash VIP Experience",

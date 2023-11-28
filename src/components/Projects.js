@@ -57,12 +57,30 @@ function ResearchChip ({ label }) {
   )
 }
 
+function MiscChip ({ label }) {
+  return (
+    <Chip
+      label={label}
+      color="warning"
+      variant="contained"
+      size="small"
+      sx={{
+        fontSize: "12px",
+        padding: "3px",
+        marginTop: "5px",
+        marginRight: "5px",
+      }}
+    />
+  )
+}
+
 export function Project() {
     const [selectedIndex, setSelectedIndex] = useState(0);
-    const [ENGINEERING, DESIGN, RESEARCH] = projectSection;
+    const [ENGINEERING, DESIGN, RESEARCH, MISC] = projectSection;
     const engineeringProjects = projectList.filter(project => project.sections.includes(ENGINEERING));
     const designProjects = projectList.filter(project => project.sections.includes(DESIGN));
     const researchProjects = projectList.filter(project => project.sections.includes(RESEARCH));
+    const miscProjects = projectList.filter(project => project.sections.includes(MISC));
     const [projects, setProjects] = useState(engineeringProjects);
 
     const logoPath = process.env.PUBLIC_URL + '/project-logo/';
@@ -77,6 +95,9 @@ export function Project() {
         } else if (section === RESEARCH) {
             setProjects(researchProjects);
             setSelectedIndex(2);
+        } else if (section === MISC) {
+            setProjects(miscProjects);
+            setSelectedIndex(3);
         }
     }
 
@@ -91,6 +112,9 @@ export function Project() {
         </Button>
         <Button variant={selectedIndex === 2 ? "contained" : "outlined"} color="info" sx={{margin: "10px", padding: "5px 25px"}} onClick={() => changeSection(RESEARCH)}>
           Research
+        </Button> 
+        <Button variant={selectedIndex === 3 ? "contained" : "outlined"} color="warning" sx={{margin: "10px", padding: "5px 25px"}} onClick={() => changeSection(MISC)}>
+          MISC.
         </Button> 
         </div>
         <div className="projectList">
@@ -121,6 +145,8 @@ export function Project() {
                       return <DesignChip label={label} />
                     } else if (type === RESEARCH) {
                       return <ResearchChip label={label} />
+                    } else if (type === MISC) {
+                      return <MiscChip label={label} />
                     } else {
                       return null;
                    }

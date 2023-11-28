@@ -162,6 +162,17 @@
   margin-bottom: 50px;
 }
 
+.photographyOverview {
+  background-image: url("../public/project-img/photography-preview-2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 200px 75px;
+  text-align: center;
+  /* font-weight: normal; */
+  font-size: 50px;
+  margin-bottom: 50px;
+}
+
 .projImg {
   width: 60%;
   height: auto;
