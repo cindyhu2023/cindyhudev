@@ -42,6 +42,7 @@ export function Meta() {
         </Box>
         <div className="SubSection">
         <h3>Overview</h3>
+        <p><b>September 2023 Update: </b>This project is now launched to public users!</p>
         <p>(Disclaimer: This project is under NDA.)</p>
         <p>I designed and built a backend platform with GraphQL APIs to address the challenge of measuring private post-sharing (e.g. messaging post URLs to friends) while anonymizing individual user activities. On other social media platforms like TikTok and Pinterests, users receive a unique, shortened URL each time they copy a link to a post, whereas Facebook users receive a same URL every time. Therefore, the platform handles URL shortening and redirecting for Facebook posts in order to gather data for data scientists to analyze user’s post sharing behaviors and visitation patterns on Facebook. In addition, the APIs also provide customization options for URL previews when shared through Messenger and Facebook in-app inbox for a better messaging experience.</p>
         <Box  sx={{ flexGrow: 1 }}>
@@ -63,8 +64,8 @@ export function Meta() {
                 <Grid item xs={3}>
                 <p><b>Facebook</b></p>
                 <div style={{ wordWrap: 'break-word', fontSize: '14px' }}>
-                <p>https://www.facebook.com/100064360016677/posts/pfbid02fMLAi5DkS4p4eSasZwsU3wZWAL3wLdu5Dk1Jwbik2TVh4vwk73qKthfrpGVEXHtMl</p>
-                <p>(You always get a similar-looking link back)</p>
+                <p>Old: https://www.facebook.com/100064360016677/posts/pfbid02fMLAi5DkS4p4eSasZwsU3wZWAL3wLdu5Dk1Jwbik2TVh4vwk73qKthfrpGVEXHtMl</p>
+                <p>New: https://www.facebook.com/share/p/KAentohqR2d95aaZ</p>
                 </div>
                 </Grid>
             </Grid>
